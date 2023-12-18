@@ -1,0 +1,398 @@
+*{margin: auto;;background-repeat: no-repeat;}
+
+.wrap{
+    width: 100%;margin: auto;
+    position: relative; margin-top: 45px;
+    position: fixed;
+  
+    height: 70px;
+    top:0
+}
+
+    .menu{
+        position: absolute;
+        left: 50px; top: 0px;
+    }
+
+            input[id="menuicon"] {
+                display: none;
+            }
+            input[id="menuicon"] + label {
+                display: block;
+                width: 35px;
+                height: 28px;
+                position: fixed;
+                cursor: pointer;
+            }
+            input[id="menuicon"] + label span {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                border-radius: 30px;
+                background-color: black;
+                transition: all .35s;
+            }
+            input[id="menuicon"] + label span:nth-child(1){
+                top: 0;
+            }
+            input[id="menuicon"] + label span:nth-child(2){
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            input[id="menuicon"] + label span:nth-child(3){
+                bottom: 0;
+            }
+
+                    input[id="menuicon"]:checked + label span:nth-child(1){
+                        top: 50%;
+                        transform: translateY(-50%) rotate(45deg);
+                    }
+                    input[id="menuicon"]:checked + label span:nth-child(2){
+                        opacity: 0;
+                    }
+                    input[id="menuicon"]:checked + label span:nth-child(3){
+                        bottom: 50%;
+                        transform: translateY(50%) rotate(-45deg);
+                    }
+                   
+                    div[class="sidebar"] {
+                        width: 350px;
+                        height: 100%;
+                        background-color: #000;
+                        position: fixed;
+                        top: 0;
+                        left: -350px;
+                        z-index: 1;
+                        transition: all.35s;
+                    }
+
+                    input[id="menuicon"]:checked + label + div{
+                        left: 0;
+                    }
+
+                    input[id="menuicon"]:checked + label{
+                        z-index: 2;
+                    }
+
+                    input[id="menuicon"]:checked + label span {
+                        background-color: #fff;
+                    }
+            
+            /* ul {
+                width: 0;
+                margin: 0;
+                padding: 15px;
+            } */
+
+
+            .list {
+                color: #fff;
+                font-family: "din-condensed", sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 19px;
+                letter-spacing: -0.4px;
+                line-height: 70px;
+                margin-top: 200px;
+                margin-left: 80px;
+            }
+
+            li {
+                list-style-type: none;
+                cursor: pointer;}
+
+
+
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* top: 50px; 
+        margin-left: auto;
+        margin-right: auto;
+                 */
+    }
+ 
+    .insta{
+        position: absolute;
+        right:50px; top: 0px;
+    }
+
+
+
+    .box1{
+        width: 100%;margin: auto;
+        margin-top: 260px;
+
+    }
+        .title{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bg{background-color: #fff;
+            height: 120px;
+        margin-top: -80px;}
+
+   
+
+     .box2{
+        width: 100%;margin: auto;
+        margin-top: 130px;
+    
+     }
+        .down{
+            display: flex;
+            align-items: center;
+             justify-content: center;
+        }
+
+
+
+    .box3 {
+        max-width: 900px;
+        width: 100%;
+        position: relative;
+        top: -200px;
+        margin: 0 auto;
+    }
+        ul > li{
+    display: inline-block;
+    vertical-align: top;
+}
+    .sbox1{
+        position: absolute;
+        top: 300px;
+        left: 200px;
+        height: 0px;
+        width: 200px;
+        background-color: rgb(255, 255, 255);
+        border-bottom: 0px solid;
+        border-color: #ffffff;
+        border-radius: 100px;}
+        
+   a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .sbox1:hover{
+        position: absolute;
+        top: 300px;
+        left: 200px;
+        height: 400px;
+        width: 200px;
+        border: 3px solid;
+        border-color: #000;
+        border-radius: 100px;
+        transition: all 1.2s;
+        
+    }
+
+            .Inte{
+                position: absolute;
+                top: 200px;
+                left: -5px;
+            }
+
+            .Inte:hover{
+                position: absolute;
+                width: 400px;
+                height: 400px;
+                top: -3px;
+                left: -5px;
+                transition: all 0.8s;}
+
+            .Intro{
+                color: #000000;
+                font-family: "din-condensed", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 19px;
+                letter-spacing: -0.4px;
+                line-height: 70px;
+                margin-top: 220px;
+                margin-left: 65px;
+            }
+
+       
+
+
+            .sbox2{
+                position: absolute;
+                top: 500px;
+                right: 200px;
+                height: 200px;
+                width: 100px;
+                border: 3px solid;
+                border-color: #ffffff;
+                border-radius: 100px;
+            }
+
+            .sbox2:hover{
+                position: absolute;
+                top: 500px;
+                right: 0px;
+                height: 200px;
+                width: 400px;
+                border: 3px solid;
+                border-color: #000;
+                border-radius: 100px;
+                transition: all 1.2s;
+                
+            }
+
+
+
+            .Wo{
+                position: absolute;
+                top: -5px;
+                right: -3px;
+                
+            }
+
+            .Wo:hover{
+                position: absolute;
+                top: -5px;
+                right: -3px;
+                transition: all 0.8s;}
+
+                .Wor{ color: #000000;
+                    font-family: "din-condensed", sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 19px;
+                    letter-spacing: -0.4px;
+                    line-height: 70px;
+                    margin-top: 70px;
+                    margin-left: 53px;}
+
+
+
+             .sbox3{
+                position: absolute;
+                top: 800px;
+                left: 200px;
+                height: 200px;
+                width: 0px;
+                border: 3px solid;
+                border-color: #ffffff;
+                border-radius: 100px;
+            }
+
+            .sbox3:hover{
+                position: absolute;
+                top: 800px;
+                left: 0px;
+                height: 200px;
+                width: 400px;
+                border: 3px solid;
+                border-color: #000;
+                border-radius: 100px;
+                transition: all 1.2s;
+            }
+
+            .Inter{ color: #000000;
+                font-family: "din-condensed", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 19px;
+                letter-spacing: -0.4px;
+                line-height: 70px;
+                margin-top: 870px;
+                margin-left: 220px;
+                text-decoration: no;
+            }
+
+            .In{
+                position: absolute;
+                top: -5px;
+                left: -3px;
+            }
+
+            .In:hover{
+                position: absolute;
+                top: -5px;
+                left: -3px;
+                transition: all 0.8s;
+            }
+
+          
+
+              .sbox4{
+                position: absolute;
+                top: 800px;
+                right: 200px;
+                height: 0px;
+                width: 200px;
+                background-color: rgb(255, 255, 255);
+            border-bottom: 0px solid;
+            border-color: #ffffff;
+            border-radius: 100px;
+            }
+
+    
+            .sbox4:hover{
+                position: absolute;
+                top: 800px;
+                right: 200px;
+                height: 400px;
+                width: 200px;
+                border: 3px solid;
+                border-color: #000;
+                border-radius: 100px;
+                transition: all 1.2s;
+            }
+
+
+
+         
+            .AW{
+                position: absolute;
+                top: -5px;
+                right: -3px;
+                
+            }
+
+            .AW:hover{
+                position: absolute;
+                top: 200px;
+                right: -3px;
+                transition: all 0.8s;}
+
+                .Awar{ color: #000000;
+                    font-family: "din-condensed", sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 19px;
+                    letter-spacing: -0.4px;
+                    line-height: 70px;
+                    margin-top: 100px;
+                    margin-left: 70px;}
+
+                 .qqaa{
+                    text-align: center;
+                    margin-top: 300px;
+                    margin-bottom: 300px;
+
+                 }   
+
+
+
+
+        footer{
+            margin-bottom: 50px;
+            height: 93px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #AFAFAF;
+            font-size: 18px;
+            font-family: 'Noto Sans KR', sans-serif;
+            letter-spacing: -0.6px;
+        }
+
+
